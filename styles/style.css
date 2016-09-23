@@ -41,6 +41,10 @@ h2 {
     font-size: 2rem;
 }
 
+a, p {
+    font-size: 1rem;
+}
+
 form {
     flex-basis: 500px;
     flex-grow: 1;
@@ -75,7 +79,7 @@ textarea {
 }
 
 .check-circle {
-    margin: 40px 0;
+    margin: 3em 0;
 }
 
 .bold {
@@ -87,7 +91,7 @@ textarea {
 }
 
 header {
-    padding: 20px 0;
+    padding: 1.5em 0;
     background: #fff;
     overflow: hidden;
 }
@@ -109,7 +113,7 @@ header .logo {
 
 nav {
     text-transform: uppercase;
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     float: right;
 }
 
