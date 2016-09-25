@@ -15,9 +15,9 @@
                 <a class="logotype" href="index.html">Blue.</a>
                 <nav>
                     <ul>
-                        <li><a href="#hello">Hello</a><div class="bottom_line"></div></li>
-                        <li><a href="#work">Featured work</a><div class="bottom_line"></div></li>
-                        <li><a href="#can">What we can do</a><div class="bottom_line"></div></li>
+                        <li><a class="point_href" href="#hello">Hello</a><div class="bottom_line"></div></li>
+                        <li><a class="point_href" href="#work">Featured work</a><div class="bottom_line"></div></li>
+                        <li><a class="point_href" href="#can">What we can do</a><div class="bottom_line"></div></li>
                     </ul>
                 </nav>
             </div>
@@ -27,7 +27,7 @@
     </header>
     <div id="greeting" class="dark_theme">
         <div class="wrap">
-            <h2><a name="hello">Hello.</a></h2>
+            <h2><a id="hello">Hello.</a></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia ac nibh non rutrum. Phasellus fringilla dolor vitae odio bibendum scelerisque. Duis et purus vitae nibh congue mattis in id orci. Integer sit amet porttitor erat. Donec id laoreet erat, sit amet sodales lorem. Nulla et tortor sit amet ipsum. </p>
             <p>Cras lacinia feugiat tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel nisl id dui rutrum pellentesque.</p>
             <p>Pellentesque habitant morbi tristique seAnectus et netus et malesuada fames ac turpis egestas. Phasellus faucibus ante sed odio gravida, laoreet ornare sapien vulputate.</p>
@@ -35,7 +35,7 @@
     </div>
     <div id="featured-work" class="light_theme">
         <div class="wrap">
-            <h2><a name="work">Featured work</a></h2>
+            <h2><a id="work">Featured work</a></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Integer feugiat ipsum nec risus fermentum fermentum id id odio.</p>
         </div>
         <div class="examples flex_wrap">
@@ -83,7 +83,7 @@
     </div>
     <div id="skills" class="dark_theme">
         <div class="wrap">
-            <h2><a name="can">What we can do</a></h2>
+            <h2><a id="can">What we can do</a></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer feugiat ipsum nec risus fermentum fermentum id id odio.
             </p>
@@ -125,5 +125,7 @@
         </div>
     </div>
     <footer class="light_theme"><div class="wrap">Copyright 2015. Blue.</div></footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/scrypt.js"></script>
 </body>
 </html>
