@@ -283,15 +283,13 @@ footer {
     font-weight: 400;
 }
 
-
-.clearfix:before,
-.clearfix:after {
-content: " ";
-display: table;
-}
-.clearfix:after {
-clear: both;
-}
-.clearfix {
-*zoom: 1;
+@media screen and (max-width: 520px){
+	nav, .logotype {
+		float: none;
+	}
+	nav ul li {
+		display: inline-block;
+		float: none;
+		margin-top: 0.6em;
+	}
 }
