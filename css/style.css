@@ -46,11 +46,9 @@ table {
 a {
     text-decoration: none;
     color: #303030;
-    transition: margin 0.3s;
 }
 
 a:hover {
-    margin-right: 10%;
     color: #a1a1a1;
 }
 
