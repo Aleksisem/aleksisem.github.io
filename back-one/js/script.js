@@ -1,0 +1,2 @@
+
+$(document).ready(function(){var navbar=$('.navbar'),menu=$('nav ul'),menuHeight=menu.height();$(navbar).on('click',function(e){e.preventDefault();menu.slideToggle();});$(window).resize(function(){var width=$(window).width();if(width>650&&menu.is(':hidden')){menu.removeAttr('style');}});});
