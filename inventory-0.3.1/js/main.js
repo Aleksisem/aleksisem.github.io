@@ -4,6 +4,8 @@ const ctx = canvas.getContext('2d');
 document.body.appendChild(canvas);
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+const width = 1920;
+const scale = innerWidth / width;
 document.body.scrollTop = 0;
 document.body.style.overflow = 'hidden';
 let mouseCoord;
@@ -43,12 +45,15 @@ window.onload = () => {
     requestAnimationFrame(requestFrame);
 };
 function requestFrame() {
+    ctx.save();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.scale(scale, scale);
     inventory === null || inventory === void 0 ? void 0 : inventory.draw();
     backpack === null || backpack === void 0 ? void 0 : backpack.draw();
     if (pickedItem) {
         pickedItem === null || pickedItem === void 0 ? void 0 : pickedItem.item.draw({ x: 0, y: 0 });
     }
+    ctx.restore();
     requestAnimationFrame(requestFrame);
 }
 function addItem(itemNumber) {
@@ -133,8 +138,8 @@ function moveItem(item, inventory) {
 function getMousePos(canvas, event) {
     let rect = canvas.getBoundingClientRect();
     return {
-        x: event.clientX - rect.left,
-        y: event.clientY - rect.top
+        x: (event.clientX - rect.left) / scale,
+        y: (event.clientY - rect.top) / scale
     };
 }
 function isInside(point, x, y, width, height) {
