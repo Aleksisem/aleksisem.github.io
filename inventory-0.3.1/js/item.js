@@ -58,7 +58,7 @@ let Item = (() => {
             this.ctx.lineWidth = 5;
             this.ctx.strokeRect(mouseCoord.x, mouseCoord.y, 200, 75);
             this.ctx.fillStyle = 'white';
-            this.ctx.font = '14pt Ubuntu';
+            this.ctx.font = '14pt Arial';
             this.ctx.textBaseline = 'middle';
             this.ctx.fillText(this.name, mouseCoord.x + 100 - this.ctx.measureText(this.name).width / 2, mouseCoord.y + 35);
             this.ctx.restore();
